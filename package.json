@@ -1,0 +1,14 @@
+{
+  "name": "ai-agent-prototype",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
