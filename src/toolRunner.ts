@@ -13,7 +13,8 @@ export const runTool = async (
 
   switch (toolCall.function.name) {
     case "generate_image":
-      return generateImage(input);
+      const image = await generateImage(input);
+      return image;
     case "get_dad_joke":
       return dadJoke(input);
     case "get_reddit_post":
