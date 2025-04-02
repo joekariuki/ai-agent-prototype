@@ -1,5 +1,9 @@
-import { generateImage } from "./generateImage";
-import { dadJoke } from "./dadJoke";
-import { reddit } from "./reddit";
+import { generateImageToolDefinition } from "./generateImage";
+import { dadJokeToolDefinition } from "./dadJoke";
+import { redditToolDefinition } from "./reddit";
 
-export const tools = [generateImage, dadJoke, reddit];
+export const tools = [
+  generateImageToolDefinition,
+  dadJokeToolDefinition,
+  redditToolDefinition,
+];
