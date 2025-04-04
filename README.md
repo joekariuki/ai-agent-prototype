@@ -21,12 +21,14 @@ A TypeScript-based AI agent prototype that leverages OpenAI's API to create an i
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/ai-agent-prototype.git
    cd ai-agent-prototype
    ```
 
 2. Install dependencies:
+
    ```bash
    bun install
    ```
@@ -85,12 +87,15 @@ ai-agent-prototype/
 ## Available Tools
 
 ### Image Generation
+
 Generate images using DALL-E 3 based on text prompts.
 
 ### Dad Joke Retriever
+
 Fetch random dad jokes or search for jokes by topic.
 
 ### Reddit Content Fetcher
+
 Retrieve posts from specified subreddits.
 
 ## Extending with New Tools
@@ -103,6 +108,7 @@ To add a new tool:
 4. Add the tool to the exports in `src/tools/index.ts`
 
 Example tool structure:
+
 ```typescript
 import type { ToolFn } from "../../lib/types";
 import { z } from "zod";
@@ -135,6 +141,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgements
 
-- [OpenAI](https://openai.com/) for their powerful AI models
+- [Build an AI Agent from Scratch](https://frontendmasters.com/courses/ai-agents/) course on Frontend Masters, taught by Scott Moss
+- [OpenAI](https://openai.com/) for their AI models and APIs
 - [Bun](https://bun.sh) for the fast JavaScript runtime
 - [Zod](https://github.com/colinhacks/zod) for TypeScript-first schema validation
