@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "autoevals": "^0.0.125",
+    "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
     "lowdb": "^7.0.1",
     "openai": "^4.89.0",
