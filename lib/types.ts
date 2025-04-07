@@ -14,15 +14,30 @@ export interface Score {
   score: number;
 }
 
+export interface ToolCall {
+  id?: string;
+  type: string;
+  function: {
+    name: string;
+    arguments?: string;
+  };
+}
+
+export interface AssistantResponse {
+  role: string;
+  content: string | null;
+  tool_calls?: ToolCall[];
+  refusal: null;
+  annotations?: any[];
+}
+
 export interface Run {
   input: string;
-  output: {
+  output: AssistantResponse;
+  expected: {
     role: string;
-    content: string | null;
-    tool_calls?: any[];
-    refusal: null;
+    tool_calls: ToolCall[];
   };
-  expected: string;
   scores: Score[];
   createdAt?: string;
 }
@@ -33,11 +48,11 @@ export interface Set {
   createdAt: string;
 }
 
-export interface Experiments {
+export interface Experiment {
   name: string;
   sets: Set[];
 }
 
 export interface Results {
-  experiments: Experiments[];
+  experiments: Experiment[];
 }
